@@ -1,12 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    int n,r;
+    int n,rev=0,rem;
     cout<<" Enter a number :";
     cin>>n;
     do{
-        r = n%10;
-        cout<<r;
+        rem = n%10;
+        rev = rev*10 + rem;
+        cout<<rev;
         n=n/10;
     }
     while(n!=0);
